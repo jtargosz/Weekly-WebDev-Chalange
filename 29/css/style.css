@@ -136,7 +136,7 @@ Front-end: Jarosław Targosz
 
 .scroll_img {
     position: relative;
-    top:200px;
+    top: 200px;
     transition: opacity .3s ease 0s;
     -webkit-transition: opacity .3s ease 0s;
     animation: scroll_img 2s infinite;
@@ -899,6 +899,11 @@ Front-end: Jarosław Targosz
     margin-left: 16px;
 }
 
+.social-media a:hover {
+    color: red;
+    font-weight: bold;
+}
+
 
 /* ------------------------ WRAPPERS ------------------------ */
 
@@ -1215,9 +1220,9 @@ Front-end: Jarosław Targosz
 
 .no_margin {
     margin-bottom: 0px !important;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
 .padding_custom3 {
@@ -1260,6 +1265,7 @@ Front-end: Jarosław Targosz
 .overflow_hidden {
     overflow: hidden;
 }
+
 
 /* ------------------------ SHRINK NAVBAR ------------------------ */
 
