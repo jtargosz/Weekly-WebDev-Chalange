@@ -1253,7 +1253,10 @@ Front-end: Jarosław Targosz
 .h90 {
     height: 90%;
 }
-
+.h10 {
+    height: 10%;
+    text-align: center;
+}
 .no_padding {
     padding: 0;
 }
