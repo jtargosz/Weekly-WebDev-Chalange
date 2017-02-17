@@ -1,3 +1,3 @@
 ## Zadania z grupy [Weekly WebDev Challange](https://www.facebook.com/groups/940002776068923)
 
-1. **#29**: Bootstrap 3
+1. [https://jtargosz.github.io/Weekly-WebDev-Chalange/29](**Zadanie #29**) - [https://www.facebook.com/groups/940002776068923/permalink/1233008363435028](facebook)

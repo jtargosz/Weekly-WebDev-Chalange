@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
 
     $(function() {
-        $(".navbar-fixed-top a").on('click', function(event) {
+        $("a[href^='#']").on('click', function(event) {
             if (this.hash !== "") {
 
                 var hash = this.hash;
