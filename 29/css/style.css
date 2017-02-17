@@ -46,6 +46,8 @@ Front-end: Jarosław Targosz
 }
 
 .arrow_scroll b {
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
     bottom: 40px;
     transition: opacity .3s ease 0s;
@@ -133,7 +135,8 @@ Front-end: Jarosław Targosz
 }
 
 .scroll_img {
-    height: 10%;
+    position: relative;
+    top:200px;
     transition: opacity .3s ease 0s;
     -webkit-transition: opacity .3s ease 0s;
     animation: scroll_img 2s infinite;
@@ -1250,13 +1253,6 @@ Front-end: Jarosław Targosz
     align-self: flex-end;
 }
 
-.h90 {
-    height: 90%;
-}
-.h10 {
-    height: 10%;
-    text-align: center;
-}
 .no_padding {
     padding: 0;
 }
@@ -1264,7 +1260,6 @@ Front-end: Jarosław Targosz
 .overflow_hidden {
     overflow: hidden;
 }
-
 
 /* ------------------------ SHRINK NAVBAR ------------------------ */
 
@@ -1299,6 +1294,7 @@ nav.navbar.shrink {
 .shrink .button_nav {
     line-height: 2;
 }
+
 
 /* ------------------------------- MEDIA --------------------------------- */
 
