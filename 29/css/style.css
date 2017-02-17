@@ -1,0 +1,1290 @@
+/* 
+------------------------ 
+#29: Weekly WebDev Challange
+https://www.facebook.com/groups/940002776068923/
+
+Graphic: behance.net/mikeinhumans
+Front-end: Jarosław Targosz
+------------------------ 
+*/
+    
+    @font-face {
+        font-family: 'Wild Youth';
+        src: url('fonts/wildyouth-regular-webfont.woff2') format('woff2'), url('fonts/wildyouth-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* ------------------------ HEADER ------------------------ */
+    
+    .home {
+        min-height: 890px;
+        height: 100vh;
+        text-align: center;
+    }
+    
+    .home h3 {
+        font-size: 50px;
+        font-family: "Wild Youth";
+        color: rgb(228, 187, 122);
+        line-height: 0.6;
+    }
+    
+    .home h1 {
+        font-size: 76px;
+        font-family: "Average";
+        color: rgb(255, 255, 255);
+        line-height: 0.7;
+    }
+    
+    .home span {
+        font-size: 16px;
+        font-family: "Average";
+        color: rgb(255, 255, 255);
+        line-height: 1.5;
+    }
+    
+    .arrow_scroll b {
+        position: absolute;
+        bottom: 40px;
+        transition: opacity .3s ease 0s;
+        -webkit-transition: opacity .3s ease 0s;
+        animation: arrow_scroll 2s infinite;
+    }
+    
+    @keyframes arrow_scroll {
+        50% {
+            padding-bottom: 5px;
+            text-shadow: 0px 0px 20px #E4BB7A;
+        }
+    }
+    
+    .arrow_scroll,
+    .arrow_scroll:hover,
+    .arrow_scroll:focus {
+        font-size: 36px;
+        color: rgb(228, 187, 122);
+        line-height: 0.833;
+    }
+    /* ------------------------ SOCIAL MEDIA LEFT ------------------------ */
+    
+    .social {
+        margin: 0;
+        padding: 0;
+        float: left;
+        position: relative;
+        top: 40%;
+        z-index: 9999999999
+    }
+    
+    .social ul {
+        margin: 0;
+        padding: 5px;
+    }
+    
+    .social ul li {
+        margin: 30px;
+        list-style: none outside none;
+        display: block;
+    }
+    
+    .social i {
+        width: 40px;
+        height: 40px;
+        color: #252525;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 12px;
+        border-radius: 50%;
+        border: 1px #252525 solid;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -o-border-radius: 50%;
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        -o-transition: all 0.8s;
+        -ms-transition: all 0.8s;
+        transition: all 0.8s;
+    }
+    
+    .social i:hover {
+        color: #252525;
+        text-decoration: none;
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms--transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    /* ------------------------ ORGANIC FOOD ------------------------ */
+    
+    .organic_food {
+        height: 100vh;
+        min-height: 1000px;
+    }
+    
+    .scroll_img {
+        height: 10%;
+        transition: opacity .3s ease 0s;
+        -webkit-transition: opacity .3s ease 0s;
+        animation: scroll_img 2s infinite;
+    }
+    
+    @keyframes scroll_img {
+        50% {
+            padding: 5px;
+        }
+    }
+    
+    .wrapper_div {
+        background: #fff;
+        padding: 10px;
+    }
+    
+    .border_div { 
+        border: 1px #8e8e8d solid;
+        padding: 5px;
+        min-height: 420px;
+        text-align: center;
+    }
+    
+    .border_div h3 {
+        font-size: 36px;
+        font-family: "Montserrat";
+        color: rgb(27, 27, 27);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.972;
+        margin-top: 75px;
+    }
+    
+    .border_div .arrow {
+        margin: 35px;
+    }
+    
+    .border_div p {
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(77, 77, 77);
+        line-height: 1.733;
+        max-width: 581px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    
+    .container_table {
+        display: table;
+        height: 100%;
+        width: 100%;
+        margin-top: -50px;
+        padding: 50px 0 0 0;
+        box-sizing: border-box;
+    }
+    
+    .row_custom {
+        display: table-row;
+        height: 100%;
+    }
+    
+    .rectangle {
+        height: 100%;
+        background: #41403f
+    }
+    
+    .rectangle div {
+        height: 100%;
+        width: 100%;
+        border-right: 30px solid #e2e2e2;
+    }
+    
+    .rectangle_white {
+        position: relative;
+        z-index: 9;
+        margin-left: -50px;
+        width: calc(100% + 49px);
+        height: auto;
+        background: #fff;
+        clear: both;
+        float: left;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-left: 50px;
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .rectangle_white h4 {
+        font-size: 45px;
+        font-family: "Wild Youth";
+        color: rgb(228, 187, 122);
+        line-height: 0.578;
+    }
+    
+    .rectangle_white span {
+        font-size: 36px;
+        font-family: "Montserrat";
+        color: rgb(27, 27, 27);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.4;
+        letter-spacing: 2px;
+    }
+    
+    .rectangle_white p {
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(77, 77, 77);
+        line-height: 1.733;
+        padding-top: 30px;
+    }
+    
+    .rectangle_white_mask {
+        z-index: 2;
+        position: absolute;
+        border: 1px solid #e4bb7a;
+        border-left: none;
+        width: 80%;
+        height: calc(100% - 40px);
+        top: 20px
+    }
+    
+    .row .no-float {
+        display: table-cell;
+        float: none;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    /* ------------------------ OUR HISTORY ------------------------ */
+    
+    .our_history h3 {
+        font-size: 50px;
+        font-family: "Wild Youth";
+        color: rgb(228, 187, 122);
+        line-height: 0.9;
+    }
+    
+    .our_history span {
+        font-size: 36px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.9;
+    }
+    
+    .our_history p {
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(238, 238, 238);
+        line-height: 1.733;
+        padding: 30px 0;
+    }
+    /* ------------------------ SINGLE QUOTE ------------------------ */
+    
+    .single_quote {
+        margin: 20px 0;
+        text-align: center;
+    }
+    
+    .single_quote h4 {
+        font-size: 36px;
+        font-family: "Average";
+        color: rgb(255, 255, 255);
+        line-height: 0.694;
+    }
+    
+    .single_quote span {
+        font-size: 45px;
+        font-family: "Wild Youth";
+        color: rgb(228, 187, 122);
+        line-height: 2;
+    }
+    /* ------------------------ SECTION MENU  ------------------------ */
+    
+    .menu_wrapper {
+        padding-top: 90px;
+    }
+    
+    .menu_item {
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #e4bb7a;
+        padding-left: 125px;
+        padding-right: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .menu_item h5 {
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: rgb(21, 14, 6);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.8;
+    }
+    
+    .menu_item .short_desc {
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(228, 187, 122);
+        line-height: 0.9;
+    }
+    
+    .menu_item .long_desc {
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(77, 77, 77);
+        line-height: 1.6;
+        margin: 40px 0;
+    }
+    
+    .menu_item .price {
+        font-size: 24px;
+        font-family: "Montserrat";
+        color: rgb(21, 14, 6);
+        font-weight: bold;
+        line-height: 1;
+    }
+    
+    .menu_item_left .item_thumbnail {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -110px;
+    }
+    
+    .menu_item_right {
+        padding-left: 50px;
+        padding-right: 110px;
+    }
+    
+    .menu_item_right .item_thumbnail {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -110px;
+    }
+    
+    .our_menu_item {
+        margin-top: 30px;
+    }
+    
+    .our_menu_item img {
+        float: left;
+        margin: auto;
+    }
+    
+    .our_menu_item div {
+        float: left;
+        padding-left: 20px;
+        padding-right: 5px;
+        max-width: 380px;
+    }
+    
+    .our_menu_item div h6 {
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.9;
+    }
+    
+    .our_menu_item div p {
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(228, 187, 122);
+        line-height: 0.9;
+    }
+    
+    .our_menu_item b {
+        float: right;
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-align: left;
+        line-height: 2;
+    }
+    /* ------------------------ OPENING HOURS ------------------------ */
+    
+    .opening_hours {
+        min-height: 352px;
+        background: url("../images/opening_hours.jpg") repeat-y left;
+    }
+    
+    .opening_hours .opening_hours_inner {
+        text-align: center;
+        background-color: #fff;
+        float: right;
+        outline: 1px solid #747474;
+        outline-offset: -10px;
+        min-height: 352px;
+        background-image: url(http://api.thumbr.it/whitenoise-390x352.png?background=ffffffff&noise=5c5c5c&density=13&opacity=20);
+        padding: 0px 15px;
+    }
+    
+    .opening_hours .opening_hours_inner div {
+        min-height: 352px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border: 50px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .opening_hours .opening_hours_inner div h6 {
+        font-size: 15px;
+        font-family: "Montserrat";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.5;
+        padding-top: 35px;
+    }
+    
+    .opening_hours .opening_hours_inner div p {
+        font-size: 15px;
+        font-family: "Average";
+        color: #4d4d4d;
+        font-weight: normal;
+        line-height: 1.7;
+    }
+    /* ------------------------ OUR CHEFS STYLE 1 ------------------------ */
+    
+    .our_chefs_1 {
+        text-align: center;
+    }
+    
+    .our_chefs_1 img {
+        margin: auto;
+        transition: all .4s ease;
+        -webkit-transition: all .4s ease;
+    }
+    
+    .our_chefs_1 img:hover {
+        border-radius: 50%;
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+        filter: contrast(150%);
+        -webkit-filter: contrast(150%);
+        -moz-filter: contrast(150%);
+        -o-filter: contrast(150%);
+        -ms-filter: contrast(150%);
+    }
+    
+    .our_chefs_1 h5 {
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.563;
+        margin-top: 50px;
+    }
+    
+    .our_chefs_1 span {
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(228, 187, 122);
+        line-height: 0.667;
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    .our_chefs_1 i {
+        font-size: 15px;
+        color: rgb(228, 187, 122);
+        line-height: 1.667;
+        margin-right: 14px;
+    }
+    
+    .our_chefs_1 i:hover {
+        color: red;
+    }
+    
+    .our_chefs_1 .fa-pinterest-square {
+        margin-right: 0px;
+    }
+    
+    .our_chefs_1 p {
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(255, 255, 255);
+        line-height: 1.667;
+        margin: 32px 0;
+    }
+    /* ------------------------ OUR CHEFS STYLE 2 ------------------------ */
+    
+    .our_chefs_2 img:hover {
+        border-radius: 0;
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    
+    .our_chefs_2 h5 {
+        color: rgb(0, 0, 0);
+        margin-top: 50px;
+    }
+    
+    .our_chefs_2 i {
+        color: rgb(0, 0, 0);
+        margin-bottom: 10px;
+    }
+    /* ------------------------ HEADER STYLE ------------------------ */
+    
+    .header_style_1 {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    
+    .header_style_1 h4 {
+        font-size: 45px;
+        font-family: "Wild Youth";
+        color: rgb(228, 187, 122);
+        line-height: 0.8;
+    }
+    
+    .header_style_1 span {
+        font-size: 36px;
+        font-family: "Montserrat";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.9;
+        letter-spacing: 4px;
+    }
+    
+    .header_style_1 p {
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(77, 77, 77);
+        line-height: 1.667;
+        margin: auto;
+        max-width: 940px;
+        padding: 40px 0px 15px 15px;
+    }
+    
+    .header_style_1 button {
+        margin-top: 40px;
+    }
+    
+    .header_style_1 .arrow_padding {
+        padding: 35px 0px 0px 0px;
+    }
+    
+    .header_style_1 .stars {
+        font-size: 15px;
+        font-family: "FontAwesome";
+        color: rgb(228, 187, 122);
+        line-height: 1.667;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    
+    .header_style_1 .title_header {
+        display: block;
+        font-size: 16px;
+        font-family: "Montserrat";
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.563;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    
+    .header_style_1 .title_footer {
+        display: block;
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(228, 187, 122);
+        line-height: 1.667;
+        text-align: center;
+        font-weight: normal;
+        text-transform: none;
+        letter-spacing: 0px;
+    }
+    
+    .header_style_2 {
+        text-align: center;
+    }
+    
+    .header_style_2 h4 {
+        font-size: 45px;
+        font-family: "Wild Youth";
+        color: rgb(228, 187, 122);
+        line-height: 0.8;
+    }
+    
+    .header_style_2 span {
+        font-size: 36px;
+        font-family: "Montserrat";
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 0.9;
+        letter-spacing: 4px;
+    }
+    
+    .header_style_2 p {
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(224, 224, 224);
+        line-height: 1.6;
+        padding: 40px 70px;
+    }
+    
+    .header_style_2 .arrow_padding {
+        padding: 35px;
+    }
+    
+    .header_style_3 {
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        line-height: 1.389;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    
+    .header_style_3 .arrow_padding {
+        padding: 35px;
+    }
+    /* ------------------------ FORM RESERVATION  ------------------------ */
+    
+    .input-group {
+        margin-bottom: 5px;
+    }
+    
+    .form-control {
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid rgb(221, 179, 119);
+        border-radius: 0;
+        border-right: 0;
+        height: auto;
+        padding: 15px;
+        font-family: "Average";
+        font-size: 15px;
+    }
+    
+    .form-control:focus {
+        border-color: rgb(221, 179, 119);
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    
+    .input-group-addon {
+        color: #e4bb7a;
+        background-color: transparent;
+        border: 1px solid rgb(221, 179, 119);
+        border-radius: 0;
+        border-left: 0;
+        font-size: 15px;
+    }
+    
+    /* ------------------------ FORM SUBSCRIBE ------------------------ */
+    
+    .form_subcribe {
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(65, 64, 63);
+        max-width: 270px;
+        margin: auto;
+        border: 1px solid #afafaf;
+        margin-bottom: 5px;
+    }
+    /* ------------------------ NAVBAR ------------------------ */
+    
+    .social-media-container {
+        height: 110px;
+        text-align: center;
+    }
+    
+    .social-media-container a {
+        color: #1b1b1b;
+        font-size: 20px;
+        line-height: 110px;
+        margin-right: 40px;
+    }
+    
+    .social-media-container a:last-child {
+        margin-right: 0px;
+    }
+    /* ------------------------ CAROUSEL ONE ------------------------ */
+    
+    #carousel-one .carousel-control {
+        width: 40px;
+        top: 50%;
+        font-size: 48px;
+    }
+    
+    #carousel-one .carousel-control.left,
+    #carousel-one .carousel-control.right {
+        background: transparent;
+    }
+    
+    #carousel-one .carousel-indicators li {
+        border: 2px solid #fff;
+        width: 12px;
+        height: 12px;
+    }
+    
+    #carousel-one .carousel-indicators {
+        position: relative;
+        top: 200px;
+    }
+    
+    #carousel-one .carousel-indicators .active {
+        border: 4px solid #ddb377;
+        background: #ddb377;
+        width: 14px;
+        height: 14px;
+    }
+    
+    #carousel-one {
+        min-height: 750px;
+        padding-top: 150px;
+    }
+    
+    #carousel-one .item h3 {
+        font-size: 45px;
+        font-family: "Wild Youth";
+        color: rgb(228, 187, 122);
+        line-height: 0.956;
+    }
+    
+    #carousel-one .item h4 {
+        font-size: 36px;
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 4px;
+        color: #ffffff;
+    }
+    
+    #carousel-one .item p {
+        font-size: 15px;
+        font-family: "Average";
+        color: rgb(255, 255, 255);
+        line-height: 1.733;
+    }
+    
+    #carousel-one .item button {
+        margin-top: 30px;
+    }
+    /* ------------------------ MENU 1 (fixed) ------------------------ */
+.navbar-fixed-top {
+	transition: all 0.3s ease 0s;
+-webkit-transition: all 0.3s ease 0s;
+}    
+
+    .navbar-fixed-top .in {
+        overflow: hidden;
+        transition: all 1s ease 0s;
+        -webkit-transition: all 1s ease 0s;
+        text-align: center;
+    }
+    
+    .navbar {
+        border: none;
+        background-color: transparent;
+    }
+
+
+    
+    .navbar-brand {
+        padding: 20px 10px;
+        height: auto;
+        transition: all 2s ease 0s;
+        -webkit-transition: all 2s ease 0s;
+    }
+    
+    .button_nav {
+        background: inherit;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        line-height: 3.5;
+        transition: all 2s ease 0s;
+        -webkit-transition: all 2s ease 0s;
+    }
+    
+    .button_nav:hover,
+    .button_nav:focus {
+        color: #e4bb7a;
+    }
+    
+    .navbar-nav > li a {
+        font-size: 15px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 3.2;
+        padding-left: 25px;
+        transition: all 2s ease 0s;
+        -webkit-transition: all 2s ease 0s;
+    }
+    
+
+
+
+
+    .navbar-fixed-top .in li a {
+        font-size: 15px;
+        line-height: 1.5;
+
+    }
+    
+    .nav > li > a:hover,
+    .nav .active a,
+    .button_nav a:hover,
+    .nav > li > a:focus {
+        background: transparent;
+        color: #e4bb7a;
+    }
+    
+    .header-top {
+        min-height: 30px;
+        font-family: 'Average';
+        font-size: 13px;
+        color: rgb(27, 27, 27);
+        line-height: 2.308;
+        transition: all 2s ease 0s;
+        -webkit-transition: all 2s ease 0s;
+    }
+    
+    .social-media a {
+        color: rgb(27, 27, 27);
+        font-size: 15px;
+        line-height: 2;
+        margin-left: 16px;
+    }
+    /* ------------------------ WRAPPERS ------------------------ */
+    
+    .wrapper_style1 {
+        background: #e4bb7a;
+    }
+    
+    .wrapper_style2 {
+        background: #262626;
+    }
+    
+    .wrapper_style3 {
+        background: #3f3f3f;
+    }
+    
+    .wrapper_style4 {
+        background: #fdfeff;
+    }
+    
+    .wrapper_style5 {
+        background: rgba(232, 232, 232, 1);
+        background: -moz-linear-gradient(top, rgba(232, 232, 232, 1) 0%, rgba(232, 232, 232, 1) 15%, rgba(204, 204, 204, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(232, 232, 232, 1)), color-stop(15%, rgba(232, 232, 232, 1)), color-stop(100%, rgba(204, 204, 204, 1)));
+        background: -webkit-linear-gradient(top, rgba(232, 232, 232, 1) 0%, rgba(232, 232, 232, 1) 15%, rgba(204, 204, 204, 1) 100%);
+        background: -o-linear-gradient(top, rgba(232, 232, 232, 1) 0%, rgba(232, 232, 232, 1) 15%, rgba(204, 204, 204, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(232, 232, 232, 1) 0%, rgba(232, 232, 232, 1) 15%, rgba(204, 204, 204, 1) 100%);
+        background: linear-gradient(to bottom, rgba(232, 232, 232, 1) 0%, rgba(232, 232, 232, 1) 15%, rgba(204, 204, 204, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#cccccc', GradientType=0);
+    }
+    
+    .wrapper_style6 {
+        background: #e2e2e2;
+    }
+    
+    .wrapper_style7 {
+        background: #292929;
+        overflow: hidden;
+    }
+    
+    .wrapper_style8 {
+        background: #fff;
+        overflow: hidden;
+    }
+    
+    .wrapper_style9 {
+        background: #1a1a1a;
+    }
+    
+    .wrapper_style10 {
+        background: #fbfbfb;
+    }
+    /* ------------------------ CAROUSEL 2 ------------------------ */
+    /* carousel */
+    
+    #quote-carousel {
+        padding: 0 10px 30px 10px;
+        margin-top: 30px;
+    }
+    /* Control buttons  */
+    
+    #quote-carousel .carousel-control {
+        background: none;
+        text-shadow: none;
+        top: 40%;
+        font-size: 18px;
+        color: rgb(228, 187, 122);
+        line-height: 1.389;
+    }
+}
+
+/* Previous button  */
+#quote-carousel .carousel-control.left {
+    left: -12px;
+}
+
+/* Next button  */
+#quote-carousel .carousel-control.right {
+    right: -12px !important;
+}
+
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-color: #907955;
+    border-radius: 0;
+}
+#quote-carousel .carousel-indicators .active {
+    width: 7px;
+    height: 7px;
+    background: #e4bb7a;
+    border-color: #e4bb7a;
+}
+#quote-carousel img {
+    width: 250px;
+    height: 100px
+}
+
+/* End carousel */
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote img {
+    margin-bottom: 10px;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-size: 18px;
+    color: #e4bb7a;
+    margin-bottom: 40px;
+    font-family: 'Fontawesome';
+    display: block;
+    text-align: center;
+}
+.item blockquote p {
+    font-size: 15px;
+    font-family: "Average";
+    color: rgb(217, 217, 217);
+    line-height: 1.667;
+    padding: 0 15px;
+    text-align: center;
+}
+.item footer {
+    text-align: center;
+    padding: 35px 0;
+}
+.item footer b {
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.563;
+}
+.item footer span {
+    font-size: 15px;
+    font-family: "Average";
+    color: rgb(228, 187, 122);
+    line-height: 1.667;
+}
+
+/* ------------------------ BTN ------------------------ */
+.btn-primary {
+    color: #121212;
+    background-color: #e4bb7a;
+    border-color: #e4bb7a;
+    font-size: 15px;
+    font-family: "Montserrat";
+    line-height: 2;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 58px;
+    transition: all 1s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+}
+.btn-primary:hover {
+    background-color: #262626;
+    border-color: #262626;
+    color: #e4bb7a;
+}
+.btn-default {
+    color: rgb(18, 18, 18);
+    background-color: #fff;
+    border-color: #000000;
+    font-size: 15px;
+    font-family: "Montserrat";
+    line-height: 2;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 5px 58px;
+    transition: all 1s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+}
+.btn-default:hover {
+    background-color: #000000;
+    border-color: #000000;
+    color: #fff;
+}
+
+/* ------------------------ MENU 2 (navbar-default) ------------------------ */
+.logo_big {
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+.navbar-default {
+    margin-top: 20px;
+}
+.nav-justified > li a,
+.nav-justified > li a:hover {
+    font-size: 15px;
+    font-family: "Montserrat";
+    color: #1b1b1b;
+    text-transform: uppercase;
+    line-height: 1.875;
+}
+.button_nav2 {
+    background: inherit;
+    color: #1b1b1b;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 3.5;
+}
+.button_nav2:hover,
+.button_nav2:focus {
+    color: #e4bb7a;
+}
+.navbar-default .navbar-collapse {
+    border: none;
+}
+.navbar-default .active a {
+    color: #1b1b1b;
+}
+
+/* ------------------------ MENU 3 ------------------------ */
+.menu3 {
+    margin-top: 70px;
+    text-align: center;
+}
+#collapse3 > ul > .no_hover > a::before {
+    display: none !important;
+}
+#collapse3 > ul > .active > a::before,
+#collapse3 > ul > li > a:hover::before,
+
+/* ------------------------ MENU 3 END ------------------------ */
+#collapse2 > ul > .active > a::before,
+#collapse2 > ul > li > a:hover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: -1%;
+    height: 3px;
+    width: 102%;
+    background-color: #e4bb7a;
+}
+.nav-justified > li > a {
+    display: inline;
+}
+.navbar-default .in {
+    background: transparent;
+    overflow-y: hidden;
+}
+.navbar-default .in li {
+    margin-bottom: 15px;
+    text-align: center;
+    transition: all 2s ease 0s;
+    -webkit-transition: all 2s ease 0s;
+}
+
+/* ------------------------ HELPERS ------------------------ */
+.padding_custom {
+    padding: 90px 0;
+}
+.padding_custom2 {
+    padding: 45px 0;
+}
+.no_margin {
+    margin-bottom: 0px !important;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.padding_custom3 {
+    padding-top: 90px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.top400 {
+    margin-top: 400px;
+}
+.m20 {
+    margin: 20px;
+}
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aligner-item {
+    max-width: 50%;
+}
+.aligner-item--top {
+    align-self: flex-start;
+}
+.aligner-item--bottom {
+    align-self: flex-end;
+}
+.h90 {
+    height: 90%;
+}
+.no_padding {
+    padding: 0;
+}
+.overflow_hidden {
+    overflow: hidden;
+}
+
+/* ------------------------ SHRINK NAVBAR ------------------------ */
+nav.navbar.shrink {
+    max-height: 25px;
+}
+.shrink .header-top {
+    display: none;
+}
+.shrink .wrapper_style2 {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    transition: all 2s ease 0s;
+    -webkit-transition: all 2s ease 0s;
+}
+.shrink .wrapper_style2:hover {
+    opacity: 1;
+}
+.shrink .navbar-nav > li a {
+    line-height: 1.308;
+}
+.shrink .navbar-brand {
+    padding: 0 10px;
+    margin-top: 5px;
+}
+.shrink .button_nav {
+    line-height: 2;
+}
+
+/* ------------------------------- MEDIA --------------------------------- */
+@media (max-width: 320px) {
+    .header-top {
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    .social-media {
+        clear: both;
+        float: none !important;
+    }
+    
+    #carousel-one .item h3,
+    #carousel-one .item h4 {
+        font-size: 14px;
+    }
+    
+    .menu_item h5 {
+        font-size: 12px;
+    }
+    
+    .menu_item_right {
+        padding-left: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .home h1 {
+        font-size: 50px;
+    }
+    
+    #carousel-one .item h3,
+    #carousel-one .item h4 {
+        font-size: 30px;
+    }
+    
+    #carousel-one .carousel-indicators {
+        top: 60px;
+    }
+
+    #carousel-one .carousel-indicators li, #carousel-one .carousel-indicators li.active {
+        width: 20px;
+        height: 20px;
+    }
+
+    
+    .our_menu_item div,
+    .our_menu_item b,
+    .our_menu_item img {
+        text-align: center;
+        display: block;
+        float: none;
+        margin: auto;
+    }
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-nav > li a {
+        font-size: 15px;
+    }
+    
+    #quote-carousel {
+        margin-bottom: 0;
+        padding: 0 40px 30px 40px;
+    }
+}

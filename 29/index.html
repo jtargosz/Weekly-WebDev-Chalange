@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#29: Weekly WebDev Challange</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
+    <!-- Plugins -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link href="css/timepicker.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="60">
+    <header>
+        <nav class="navbar navbar-fixed-top">
+            <div class="wrapper_style1">
+                <div class="container header-top"><b class="fa fa-map-marker"></b> New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG
+                    <div class="pull-right social-media">
+                        <a href="#" title="Facebook" data-toggle="tooltip" data-placement="left"><b class="fa fa-facebook-official"></b></a>
+                        <a href="#" title="Instagram" data-toggle="tooltip" data-placement="left"><b class="fa fa-instagram"></b></a>
+                        <a href="#" title="Twitter" data-toggle="tooltip" data-placement="left"><b class="fa fa-twitter-square"></b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper_style2">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="btn visible-xs button_nav pull-right" data-toggle="collapse" data-target="#collapse1">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="#"> <img alt="Brand" src="images/logo.png"> </a>
+                    </div>
+                    <div id="collapse1" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#reservations">reservations</a></li>
+                            <li><a href="#menu">menu</a></li>
+                            <li><a href="#blog">blog</a></li>
+                            <li><a href="#features">features</a></li>
+                            <li><a href="#subscribe">subscribe</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="home wrapper_style3">
+            <div class="container">
+                <div class="top400">
+                    <h3>Welcome to</h3>
+                    <h1>Steakville Restaurant</h1>
+                    <span>New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG</span>
+                    <p><img src="images/arrow.png" alt="" class="m20" /></p>
+                    <button class="btn btn-primary" title="check our menu" data-toggle="tooltip" data-placement="bottom">Menu</button>
+                </div>
+                <a href="#reservations" class="arrow_scroll hidden-xs"><b class="fa fa-angle-double-down"></b></a>
+            </div>
+        </div>
+        <div class="wrapper_style4">
+            <div class="container text-center">
+                <img src="images/logo_big.png" class="logo_big" alt="" />
+                <div class="row">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header text-center">
+                            <button type="button" class="btn visible-xs button_nav2 pull-right" data-toggle="collapse" data-target="#collapse2">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="collapse2">
+                            <ul class="nav nav-justified">
+                            <li class="active"><a href="#home">home</a></li>
+                            <li><a href="#reservations">reservations</a></li>
+                            <li><a href="#menu">menu</a></li>
+                            <li><a href="#blog">blog</a></li>
+                            <li><a href="#features">features</a></li>
+                            <li><a href="#subscribe">subscribe</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_style3">
+            <div id="carousel-one" class="carousel slide" data-ride="carousel">
+                <div class="container">
+                    <!-- Wrapper for slides -->
+                    <div class="col-lg-5 col-lg-offset-0 col-sm-10 col-sm-offset-1">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <h3>The Best Cuisine</h3>
+                                <h4>in your town</h4>
+                                <p class="text-justify">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button class="btn btn-primary">Menu</button>
+                            </div>
+                            <div class="item">
+                                <h3>The Best Cuisine</h3>
+                                <h4>in your town</h4>
+                                <p class="text-justify">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button class="btn btn-primary">Menu</button>
+                            </div>
+                            <div class="item">
+                                <h3>The Best Cuisine</h3>
+                                <h4>in your town</h4>
+                                <p class="text-justify">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button class="btn btn-primary">Menu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-one" role="button" data-slide="prev">
+                    <span class="fa fa-angle-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-one" role="button" data-slide="next">
+                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-one" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-one" data-slide-to="1"></li>
+                    <li data-target="#carousel-one" data-slide-to="2"></li>
+                </ol>
+            </div>
+        </div>
+        <div class="wrapper_style4">
+            <div class="container social-media-container">
+                <a href="#"><b class="fa fa-facebook-official"></b></a>
+                <a href="#"><b class="fa fa-instagram"></b></a>
+                <a href="#"><b class="fa fa-twitter-square"></b></a>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="wrapper_style5 organic_food">
+            <div class="hidden-xs social">
+                <ul>
+                    <li><a href="#"><i class="fa fa-lg fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fa fa-lg fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-lg fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+            <div class="container h90">
+                <div class="row">
+                    <nav class="navbar navbar-default menu3">
+                        <div class="navbar-header">
+                            <button type="button" class="btn visible-xs button_nav2 pull-right" data-toggle="collapse" data-target="#collapse3">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="collapse3">
+                            <ul class="nav nav-justified">
+                                <li class="active"><a href="#home">home</a></li>
+                                <li><a href="#reservations">reservations</a></li>
+                                <li><a href="#menu">menu</a></li>
+                                <li class="no_hover hidden-xs">
+                                    <a href="#home"><img src="images/logo_menu.png" alt="" /></a>
+                                </li>
+                                <li><a href="#blog">blog</a></li>
+                                <li><a href="#features">features</a></li>
+                                <li><a href="#contact">contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-sm-8 col-sm-offset-2 wrapper_div">
+                    <div class="border_div">
+                        <h3>Organic food</h3>
+                        <img class="arrow" src="images/arrow.png" alt="" />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <button class="btn btn-default">Menu</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="text-center"><img class="scroll_img hidden-xs" src="images/scroll.png" alt="" /></a>
+            </div>
+        </div>
+        <div class="wrapper_style6">
+            <div class="container padding_custom">
+                <div class="container_table">
+                    <div class="row row_custom">
+                        <div class="col-md-3 no-float hidden-sm hidden-xs rectangle">
+                            <div></div>
+                        </div>
+                        <div class="col-xs-2 col-md-3 no-float rectangle"></div>
+                        <div class="col-xs-10 col-md-6 no-float">
+                            <div class="rectangle_white">
+                                <h4>Welcome to</h4>
+                                <span>Steakville</span>
+                                <p contenteditable="true" title="contenteditable=&quot;true&quot;" data-toggle="tooltip" data-placement="top">
+                                    I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.I am text block. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                                </p>
+                            </div>
+                            <div class="rectangle_white_mask"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_style3">
+            <div class="container padding_custom">
+                <div class="col-md-6 our_history">
+                    <h3>Discover</h3>
+                    <span>Our History</span>
+                    <br />
+                    <br /><img src="images/arrow.png" alt="" />
+                    <p contenteditable="true">
+                        I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.I am text block. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                    </p>
+                    <button class="btn btn-primary">About Us</button>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_style7">
+            <div class="container padding_custom">
+                <div class="col-md-12 single_quote">
+                    <h4>“Ask not what you can do for your country. Ask what’s for lunch.” </h4>
+                    <span>Orson Welles</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+        <div class="wrapper_style8">
+            <div class="container padding_custom">
+                <div class="col-md-12 header_style_1">
+                    <h4>Our Dishes</h4>
+                    <span>menu</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu_item menu_item_left">
+                        <h5>bbq Chicken</h5>
+                        <span class="short_desc">Big and Meaty</span>
+                        <p class="long_desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                        <b class="price">$50.00</b>
+                        <a href="images/burgers/1.png" data-title="bbq Chicken" data-toggle="lightbox" data-gallery="gallery"><img class="item_thumbnail" src="images/burgers/1.png" alt="bbq Chicken" /></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu_item menu_item_right">
+                        <h5>WHOPE SANDWICH</h5>
+                        <span class="short_desc">Big and Meaty</span>
+                        <p class="long_desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                        <b class="price">$45.50</b>
+                        <a href="images/burgers/2.png" data-title="WHOPE WHOPE" data-toggle="lightbox" data-gallery="gallery"><img class="item_thumbnail" src="images/burgers/2.png" alt="WHOPE SANDWICH" /></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu_item menu_item_left">
+                        <h5>HOMESTYLE BURGER</h5>
+                        <span class="short_desc">Big and Meaty</span>
+                        <p class="long_desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                        <b class="price">$34.00</b>
+                        <a href="images/burgers/3.png" data-toggle="lightbox" data-title="HOMESTYLE BURGER" data-gallery="gallery"><img class="item_thumbnail" src="images/burgers/3.png" alt="HOMESTYLE BURGER" /></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu_item menu_item_right">
+                        <h5>BACON SANDWICH</h5>
+                        <span class="short_desc">Big and Meaty</span>
+                        <p class="long_desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                        </p>
+                        <b class="price">$75.00</b>
+                        <a href="images/burgers/4.png" data-toggle="lightbox" data-title="BACON SANDWICH" data-gallery="gallery"><img class="item_thumbnail" src="images/burgers/4.png" alt="BACON SANDWICH" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_style7">
+            <div class="container padding_custom">
+                <div class="header_style_2">
+                    <h4>Steakville</h4>
+                    <span>Our menu</span>
+                    <p class="col-md-8 col-md-offset-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </p>
+                </div>
+                <div class="col-lg-6 col-xs-12 our_menu_item">
+                    <img src="images/menu/1.png" alt="">
+                    <div>
+                        <h6>Poblano Queso Spinach Dip</h6>
+                        <p>Creamy queso is infused with spicy Poblano peppers</p>
+                    </div>
+                    <b>$14.99</b>
+                </div>
+                <div class="col-lg-6 col-xs-12 our_menu_item">
+                    <img src="images/menu/2.png" alt="">
+                    <div>
+                        <h6>Boneless Buffalo Wings</h6>
+                        <p>These wings are legendary!</p>
+                    </div>
+                    <b>$52.99</b>
+                </div>
+                <div class="col-lg-6 col-xs-12 our_menu_item">
+                    <img src="images/menu/3.png" alt="">
+                    <div>
+                        <h6>Grilled Filet Mignon</h6>
+                        <p>The most tender of all steaks!</p>
+                    </div>
+                    <b>$32.99</b>
+                </div>
+                <div class="col-lg-6 col-xs-12 our_menu_item">
+                    <img src="images/menu/4.png" alt="">
+                    <div>
+                        <h6>Poblano Queso Spinach Dip</h6>
+                        <p>Creamy queso is infused with spicy Poblano peppers</p>
+                    </div>
+                    <b>$14.99</b>
+                </div>
+                <div class="col-lg-6 col-xs-12 our_menu_item">
+                    <img src="images/menu/5.png" alt="">
+                    <div>
+                        <h6>Grilled Cedar Plank Salmon</h6>
+                        <p>A fresh filet of North Atlantic salmon is rubbed...</p>
+                    </div>
+                    <b>$14.99</b>
+                </div>
+                <div class="col-lg-6 col-xs-12 our_menu_item">
+                    <img src="images/menu/6.png" alt="">
+                    <div>
+                        <h6>Grilled Cedar Plank Salmon  </h6>
+                        <p>A fresh filet of North Atlantic salmon is rubbed...</p>
+                    </div>
+                    <b>$14.99</b>
+                </div>
+                <div class="col-lg-6 col-xs-12 our_menu_item">
+                    <img src="images/menu/7.png" alt="">
+                    <div>
+                        <h6>Mozzarella Moons</h6>
+                        <p>Mozzarella cheese</p>
+                    </div>
+                    <b>$42.99</b>
+                </div>
+                <div class="col-lg-6 col-xs-12 our_menu_item">
+                    <img src="images/menu/8.png" alt="">
+                    <div>
+                        <h6>Grilled Filet</h6>
+                        <p>The most tender of all steaks!</p>
+                    </div>
+                    <b>$14.99</b>
+                </div>
+                <div class="col-lg-6 col-xs-12 our_menu_item">
+                    <img src="images/menu/9.png" alt="">
+                    <div>
+                        <h6>Boneless Buffalo Wings</h6>
+                        <p>These wings are legendary!</p>
+                    </div>
+                    <b>$52.99</b>
+                </div>
+                <div class="col-lg-6 col-xs-12 our_menu_item">
+                    <img src="images/menu/10.png" alt="">
+                    <div>
+                        <h6>Mozzarella Moons</h6>
+                        <p>Mozzarella cheese</p>
+                    </div>
+                    <b>$42.99</b>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features">
+        <div class="wrapper_style9">
+            <div class="container padding_custom">
+                <div class="header_style_2">
+                    <h4>Your Welcome</h4>
+                    <span>opening hours</span>
+                    <p></p>
+                </div>
+                <div class="col-md-12 opening_hours">
+                    <div class="opening_hours_inner">
+                        <div>
+                            <h6>Dinner:</h6>
+                            <p>
+                                Tuesday to Saturday 5.30 pm til 9.00 pm
+                                <br /> Bank Holiday Sundays 6pm til 9pm
+                            </p>
+                            <h6>Lunch:</h6>
+                            <p>
+                                Friday 12.30 til 2.30 pm
+                                <br /> Sunday 12.30 til 4 pm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_style7">
+            <div class="container padding_custom">
+                <div class="header_style_2">
+                    <h4>Our Staff</h4>
+                    <span>meet our chefs</span>
+                    <p></p>
+                </div>
+                <div class="col-sm-4 our_chefs_1">
+                    <a href="images/chefs/1.png" data-title="James T kirk" data-footer="Captain" data-toggle="lightbox" data-gallery="chefs1">
+                        <img src="images/chefs/1.png" class="img-responsive img-circle" alt="" />
+                    </a>
+                    <h5>James T kirk</h5>
+                    <span>Captain</span>
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-square"></i></a>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                </div>
+                <div class="col-sm-4 our_chefs_1">
+                    <a href="images/chefs/2.png" data-title="Leonard mccoy" data-footer="Doctor Not  A ..." data-toggle="lightbox" data-gallery="chefs1">
+                        <img src="images/chefs/2.png" class="img-responsive img-circle" alt="" />
+                    </a>
+                    <h5>Leonard mccoy</h5>
+                    <span>Doctor Not  A ...</span>
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-square"></i></a>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                </div>
+                <div class="col-sm-4 our_chefs_1">
+                    <a href="images/chefs/3.png" data-title="Hikaru sulu" data-footer="Pilot" data-toggle="lightbox" data-gallery="chefs1">
+                        <img src="images/chefs/3.png" class="img-responsive img-circle" alt="" />
+                    </a>
+                    <h5>Hikaru sulu</h5>
+                    <span>Pilot</span>
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-square"></i></a>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_style8">
+            <div class="container padding_custom">
+                <div class="header_style_1">
+                    <h4>Our Staff</h4>
+                    <span>meet our chefs</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="col-sm-4 our_chefs_1 our_chefs_2 no_padding">
+                    <a href="images/chefs/1.png" data-title="James T kirk" data-footer="Captain" data-toggle="lightbox" data-gallery="chefs1">
+                        <img src="images/chefs/square1.png" class="img-responsive" alt="" />
+                    </a>
+                    <h5>James T kirk</h5>
+                    <span>Captain</span>
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-square"></i></a>
+                </div>
+                <div class="col-sm-4 our_chefs_1 our_chefs_2 no_padding">
+                    <a href="images/chefs/square2.png" data-title="Leonard mccoy" data-footer="Doctor Not  A ..." data-toggle="lightbox" data-gallery="chefs1">
+                        <img src="images/chefs/square2.png" class="img-responsive" alt="" />
+                    </a>
+                    <h5>Leonard mccoy</h5>
+                    <span>Doctor Not  A ...</span>
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-square"></i></a>
+                </div>
+                <div class="col-sm-4 our_chefs_1 our_chefs_2 no_padding">
+                    <a href="images/chefs/3.png" data-title="Hikaru sulu" data-footer="Pilot" data-toggle="lightbox" data-gallery="chefs1">
+                        <img src="images/chefs/square3.png" class="img-responsive" alt="" />
+                    </a>
+                    <h5>Hikaru sulu</h5>
+                    <span>Pilot</span>
+                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reservations">
+        <div class="wrapper_style9">
+            <div class="container padding_custom">
+                <div class="header_style_2">
+                    <h4>Reservation</h4>
+                    <span>Book a Table</span>
+                    <br />
+                    <img src="images/arrow.png" class="arrow_padding" alt="" />
+                </div>
+                <form action="#" method="post">
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="text" id="time" name="time" class="form-control" placeholder="Time" required />
+                            <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="text" id="date" name="date" class="form-control" placeholder="Date" required />
+                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <select class="selectpicker" data-style="form-control">
+                            <option>1 Person</option>
+                            <option>2 People</option>
+                            <option>3 People</option>
+                            <option>4 People</option>
+                            <option>5 People</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 text-center padding_custom2">
+                        <button type="submit" class="btn btn-primary">book a table</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="wrapper_style8">
+            <div class="container padding_custom">
+                <div class="header_style_1">
+                    <h4>Reservation</h4>
+                    <span>Book a Table</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <button class="btn btn-primary">book a table</button>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_style7">
+            <div class="container padding_custom">
+                <div class='col-md-12'>
+                    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                        <!-- Bottom Carousel Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#quote-carousel" data-slide-to="1"></li>
+                            <li data-target="#quote-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Carousel Slides / Quotes -->
+                        <div class="carousel-inner">
+                            <!-- Quote 1 -->
+                            <div class="item active">
+                                <blockquote>
+                                    <div class="col-sm-10 col-sm-offset-1">
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
+                                        <footer><b>John Wick</b>
+                                            <br /><span>Proffesional Cleaner</span></footer>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Quote 2 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="col-sm-10 col-sm-offset-1">
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
+                                        <footer><b>John Wick</b>
+                                            <br /><span>Proffesional Cleaner</span></footer>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <!-- Quote 3 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="col-sm-10 col-sm-offset-1">
+                                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
+                                        <footer><b>John Wick</b>
+                                            <br /><span>Proffesional Cleaner</span></footer>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <!-- Carousel Buttons Next/Prev -->
+                        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-angle-left"></i></a>
+                        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_style8">
+            <div class="container padding_custom">
+                <div class="header_style_1 no_margin">
+                    <h4>Our Best Clients</h4>
+                    <span>HAPPY CUSTOMERS</span>
+                    <br />
+                    <img src="images/arrow.png" class="arrow_padding" alt="" />
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+                    </p>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <strong class="title_header">bad comedian</strong>
+                    <span class="title_footer">Movie Critic</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="subscribe">
+        <div class="wrapper_style10">
+            <div class="container padding_custom">
+                <div class="header_style_3">
+                    <h4><b>SUBSCRIBE TO OUR NEWSLETTER</b></h4>
+                    <img src="images/arrow.png" class="arrow_padding" alt="" />
+                    <form action="#" method="post">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            <input type="email" name="email" class="form-control form_subcribe" placeholder="Email" required />
+                        </div>
+                        <div class="col-sm-2">
+                            <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== Java Script ============================ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+    <script src="js/timepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.js"></script>
+    <script src="js/application.js"></script>
+</body>
+
+</html>
