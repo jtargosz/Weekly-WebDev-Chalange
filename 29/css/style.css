@@ -47,12 +47,21 @@ Front-end: Jarosław Targosz
 
 .arrow_scroll b {
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     position: absolute;
     bottom: 40px;
     transition: opacity .3s ease 0s;
     -webkit-transition: opacity .3s ease 0s;
-    animation: arrow_scroll 2s infinite;
+    -webkit-animation: arrow_scroll 2s infinite;
+            animation: arrow_scroll 2s infinite;
+}
+
+@-webkit-keyframes arrow_scroll {
+    50% {
+        padding-bottom: 5px;
+        text-shadow: 0px 0px 20px #E4BB7A;
+    }
 }
 
 @keyframes arrow_scroll {
@@ -106,9 +115,6 @@ Front-end: Jarosław Targosz
     -webkit-border-radius: 50%;
     -o-border-radius: 50%;
     -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    -ms-transition: all 0.8s;
     transition: all 0.8s;
 }
 
@@ -120,9 +126,6 @@ Front-end: Jarosław Targosz
     -ms--transform: rotate(360deg);
     transform: rotate(360deg);
     -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    -ms-transition: all 0.2s;
     transition: all 0.2s;
 }
 
@@ -139,7 +142,14 @@ Front-end: Jarosław Targosz
     top: 200px;
     transition: opacity .3s ease 0s;
     -webkit-transition: opacity .3s ease 0s;
-    animation: scroll_img 2s infinite;
+    -webkit-animation: scroll_img 2s infinite;
+            animation: scroll_img 2s infinite;
+}
+
+@-webkit-keyframes scroll_img {
+    50% {
+        padding: 5px;
+    }
 }
 
 @keyframes scroll_img {
@@ -370,7 +380,8 @@ Front-end: Jarosław Targosz
 .menu_item_left .item_thumbnail {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     left: -110px;
 }
 
@@ -382,7 +393,8 @@ Front-end: Jarosław Targosz
 .menu_item_right .item_thumbnail {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     right: -110px;
 }
 
@@ -488,9 +500,6 @@ Front-end: Jarosław Targosz
 .our_chefs_1 img:hover {
     border-radius: 50%;
     -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
     transform: rotate(360deg);
     filter: contrast(150%);
     -webkit-filter: contrast(150%);
@@ -547,9 +556,6 @@ Front-end: Jarosław Targosz
 .our_chefs_2 img:hover {
     border-radius: 0;
     -webkit-transform: rotate(10deg);
-    -moz-transform: rotate(10deg);
-    -o-transform: rotate(10deg);
-    -ms-transform: rotate(10deg);
     transform: rotate(10deg);
 }
 
@@ -925,11 +931,8 @@ Front-end: Jarosław Targosz
 
 .wrapper_style5 {
     background: rgba(232, 232, 232, 1);
-    background: -moz-linear-gradient(top, rgba(232, 232, 232, 1) 0%, rgba(232, 232, 232, 1) 15%, rgba(204, 204, 204, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(232, 232, 232, 1)), color-stop(15%, rgba(232, 232, 232, 1)), color-stop(100%, rgba(204, 204, 204, 1)));
     background: -webkit-linear-gradient(top, rgba(232, 232, 232, 1) 0%, rgba(232, 232, 232, 1) 15%, rgba(204, 204, 204, 1) 100%);
-    background: -o-linear-gradient(top, rgba(232, 232, 232, 1) 0%, rgba(232, 232, 232, 1) 15%, rgba(204, 204, 204, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(232, 232, 232, 1) 0%, rgba(232, 232, 232, 1) 15%, rgba(204, 204, 204, 1) 100%);
     background: linear-gradient(to bottom, rgba(232, 232, 232, 1) 0%, rgba(232, 232, 232, 1) 15%, rgba(204, 204, 204, 1) 100%);
 }
 
@@ -1241,9 +1244,15 @@ Front-end: Jarosław Targosz
 }
 
 .aligner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .aligner-item {
@@ -1251,11 +1260,13 @@ Front-end: Jarosław Targosz
 }
 
 .aligner-item--top {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
 }
 
 .aligner-item--bottom {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 }
 
 .no_padding {
