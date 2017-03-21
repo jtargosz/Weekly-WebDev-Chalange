@@ -455,7 +455,7 @@ Front-end: Jarosław Targosz
     outline: 1px solid #747474;
     outline-offset: -10px;
     min-height: 352px;
-    background-image: url(http://api.thumbr.it/whitenoise-390x352.png?background=ffffffff&noise=5c5c5c&density=13&opacity=20);
+    background-image: url(../images/whitenoise-390x352.png);
     padding: 0px 15px;
 }
 
