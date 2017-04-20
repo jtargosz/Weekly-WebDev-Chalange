@@ -9,7 +9,6 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,8 +29,7 @@
                             <div class="main">
                                 <div class="input-group">
                                     <label class="input-group-addon" for="name">Name</label>
-                                    <input type="text" id="name" class="form-control" name="name" placeholder="name" required minlength="3"  />
-
+                                    <input type="text" id="name" class="form-control" name="name" placeholder="name" required minlength="3" />
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon">Date of birth</span>
@@ -47,63 +45,39 @@
                 </div>
             </div>
         </div>
-
-
-<div class="row">
-<div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-12">
                 <div class="panel panel-default">
                     <div class="panel-heading">Test kompetencji jQuery</div>
                     <div class="panel-body">
-        <p>Stwórz formularz zgodny ze standardami HTML5 oraz CSS3, wyglądający w podobny sposób do przykładu przedstawionego poniżej. Formularz ma być samodzielnym plikiem HTML. W formularzu nie należy wykorzystywać plików graficznych (jpg, gif, png, bmp), zamiast tego wykorzystaj funkcje dostępne w CSS3 (gradient, border-radius etc.), zwróć uwagę na walidację dokumentu na stronie W3C. Formularz musi wyświetlać się poprawnie conajmniej w ostatnich wersjach przeglądarek FF, Chrome i IE oraz Opera. Dodatkowym atutem będzie stworzenie dokumentu z wykorzystaniem TwitterBootstrap 3. Przyciski muszą być polami input.
-        </p>
-
-<p>Stwórz plugin do jQuery, który będzie odpowiedzialny za obsługę formularza. Przed zadziałaniem każdego przycisku pojawi się monit „czy na pewno chcesz..” z możliwością rezygnacji.
-Działanie poszczególnych przycisków:
-</p>
-<ul>
-<li><b>Get Values from form!</b> -> wyświetla dane podane przez użytkownika w konsoli przeglądarki.</li>
-<li><b>Submit</b> -> nie przekazuje danych dalej, jedynie wyświetla komunikat, „ dziękuje za wypełnienie formularza” i ustala na komputerze użytkownika plik cookie z danymi podanymi przez użytkownika. </li>
-<li><b>Reset</b> ->resetuje dane wpisane przed użytkownika oraz czyści dane w pliku cookie.</li>
-</ul>
-<p>
-Jeśli użytkownik już korzystał z formularza wyświetl komunikat „Witaj ponownie” i uzupełnij formularz danymi, które użytkownik podał wcześniej jednocześnie blokując możliwość skorzystania z pola submit.
-</p>
-
-<p>Wykonanie akcji przez przycisk nie może wiązać się z przeładowaniem witryny.</p>
-
-<p>
-    Zapewnij <b>walidację formularza</b>. Skorzystaj z pluginujQueryValidationPlugin. Dla pola Name nie ma możliwości wpisywania cyfr, imię musi składać się co najmniej z dwóch znaków.
-Data ma zostać podana w formie RRRR/MM/DD, nie może być wyższa od daty dzisiejszej.
-W przypadku wieku użytkownika poniżej 18 lat wyświetl informację, ze nie może wysłać formularza.
-Wprowadzenie błędnych danych spowoduje wyświetlenie odpowiedniego komunikatu oraz wskazanie błędnie wypełnionego pola.
-
-</p>
+                        <p>Stwórz formularz zgodny ze standardami HTML5 oraz CSS3, wyglądający w podobny sposób do przykładu przedstawionego poniżej. Formularz ma być samodzielnym plikiem HTML. W formularzu nie należy wykorzystywać plików graficznych (jpg, gif, png, bmp), zamiast tego wykorzystaj funkcje dostępne w CSS3 (gradient, border-radius etc.), zwróć uwagę na walidację dokumentu na stronie W3C. Formularz musi wyświetlać się poprawnie conajmniej w ostatnich wersjach przeglądarek FF, Chrome i IE oraz Opera. Dodatkowym atutem będzie stworzenie dokumentu z wykorzystaniem TwitterBootstrap 3. Przyciski muszą być polami input.
+                        </p>
+                        <p>Stwórz plugin do jQuery, który będzie odpowiedzialny za obsługę formularza. Przed zadziałaniem każdego przycisku pojawi się monit „czy na pewno chcesz..” z możliwością rezygnacji. Działanie poszczególnych przycisków:
+                        </p>
+                        <ul>
+                            <li><b>Get Values from form!</b> -> wyświetla dane podane przez użytkownika w konsoli przeglądarki.</li>
+                            <li><b>Submit</b> -> nie przekazuje danych dalej, jedynie wyświetla komunikat, „ dziękuje za wypełnienie formularza” i ustala na komputerze użytkownika plik cookie z danymi podanymi przez użytkownika. </li>
+                            <li><b>Reset</b> ->resetuje dane wpisane przed użytkownika oraz czyści dane w pliku cookie.</li>
+                        </ul>
+                        <p>
+                            Jeśli użytkownik już korzystał z formularza wyświetl komunikat „Witaj ponownie” i uzupełnij formularz danymi, które użytkownik podał wcześniej jednocześnie blokując możliwość skorzystania z pola submit.
+                        </p>
+                        <p>Wykonanie akcji przez przycisk nie może wiązać się z przeładowaniem witryny.</p>
+                        <p>
+                            Zapewnij <b>walidację formularza</b>. Skorzystaj z pluginujQueryValidationPlugin. Dla pola Name nie ma możliwości wpisywania cyfr, imię musi składać się co najmniej z dwóch znaków. Data ma zostać podana w formie RRRR/MM/DD, nie może być wyższa od daty dzisiejszej. W przypadku wieku użytkownika poniżej 18 lat wyświetl informację, ze nie może wysłać formularza. Wprowadzenie błędnych danych spowoduje wyświetlenie odpowiedniego komunikatu oraz wskazanie błędnie wypełnionego pola.
+                        </p>
+                    </div>
                 </div>
-    </div>
-
-
                 <div class="panel panel-default">
                     <div class="panel-heading">Test kompetencji jQuery - Część 2 (Ajax)</div>
                     <div class="panel-body">
-<a href="https://jtargosz.github.io/Weekly-WebDev-Chalange/jQuery/ajax.html" class="btn btn-primary">DEMO</a>
-
-<p>Stwórz kolejny plik HTML, który będzie zawierał DIV o id „#form”
-Stwórz skrypt jQuery, który sprawdzi czy w dokumencie istnieje div o id „#form”, jeśli tak to załaduje za pomocą $.ajax formularz z pliku, który stworzyłeś wcześniej. Pamiętaj o wyświetleniu stosownej informacji dla użytkownika jeśli z powodu błędu formularz nie zostanie załadowany oraz o wyświetleniu przycisku który załaduje w takiej sytuacji formularz ponownie (kilkukrotne kliknięcie przycisku nie może powodować kilkukrotnego wykonania requestu!).
-</p>
+                        <a href="https://jtargosz.github.io/Weekly-WebDev-Chalange/jQuery/ajax.html" class="btn btn-primary">DEMO</a>
+                        <p>Stwórz kolejny plik HTML, który będzie zawierał DIV o id „#form” Stwórz skrypt jQuery, który sprawdzi czy w dokumencie istnieje div o id „#form”, jeśli tak to załaduje za pomocą $.ajax formularz z pliku, który stworzyłeś wcześniej. Pamiętaj o wyświetleniu stosownej informacji dla użytkownika jeśli z powodu błędu formularz nie zostanie załadowany oraz o wyświetleniu przycisku który załaduje w takiej sytuacji formularz ponownie (kilkukrotne kliknięcie przycisku nie może powodować kilkukrotnego wykonania requestu!).
+                        </p>
+                    </div>
                 </div>
-    </div>
-
-
-
-
-
-
-
-
-
-</div>
-</div>
-
+            </div>
+        </div>
     </div>
     <!-- ==================== Java Script ============================ -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
