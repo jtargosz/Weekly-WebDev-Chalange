@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#Zadanie Nr 1: jQuery</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">This form name</div>
+                    <div class="panel-body">
+                        <form id="form" action="#">
+                            <div class="main">
+                                <div class="input-group">
+                                    <label class="input-group-addon" for="name">Name</label>
+                                    <input type="text" id="name" class="form-control" name="name" placeholder="name" required minlength="3"  />
+
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">Date of birth</span>
+                                    <input id="date" type="text" class="form-control" placeholder="RRRR/MM/DD" name="date" required />
+                                </div>
+                            </div>
+                            <p></p>
+                            <button type="button" id="getvalues">Get Values from form!</button>
+                            <input type="submit" value="Submit">
+                            <input type="reset" id="reset" value="Reset">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<div class="row">
+<div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Test kompetencji jQuery</div>
+                    <div class="panel-body">
+        <p>Stwórz formularz zgodny ze standardami HTML5 oraz CSS3, wyglądający w podobny sposób do przykładu przedstawionego poniżej. Formularz ma być samodzielnym plikiem HTML. W formularzu nie należy wykorzystywać plików graficznych (jpg, gif, png, bmp), zamiast tego wykorzystaj funkcje dostępne w CSS3 (gradient, border-radius etc.), zwróć uwagę na walidację dokumentu na stronie W3C. Formularz musi wyświetlać się poprawnie conajmniej w ostatnich wersjach przeglądarek FF, Chrome i IE oraz Opera. Dodatkowym atutem będzie stworzenie dokumentu z wykorzystaniem TwitterBootstrap 3. Przyciski muszą być polami input.
+        </p>
+
+<p>Stwórz plugin do jQuery, który będzie odpowiedzialny za obsługę formularza. Przed zadziałaniem każdego przycisku pojawi się monit „czy na pewno chcesz..” z możliwością rezygnacji.
+Działanie poszczególnych przycisków:
+</p>
+<ul>
+<li><b>Get Values from form!</b> -> wyświetla dane podane przez użytkownika w konsoli przeglądarki.</li>
+<li><b>Submit</b> -> nie przekazuje danych dalej, jedynie wyświetla komunikat, „ dziękuje za wypełnienie formularza” i ustala na komputerze użytkownika plik cookie z danymi podanymi przez użytkownika. </li>
+<li><b>Reset</b> ->resetuje dane wpisane przed użytkownika oraz czyści dane w pliku cookie.</li>
+</ul>
+<p>
+Jeśli użytkownik już korzystał z formularza wyświetl komunikat „Witaj ponownie” i uzupełnij formularz danymi, które użytkownik podał wcześniej jednocześnie blokując możliwość skorzystania z pola submit.
+</p>
+
+<p>Wykonanie akcji przez przycisk nie może wiązać się z przeładowaniem witryny.</p>
+
+<p>
+    Zapewnij <b>walidację formularza</b>. Skorzystaj z pluginujQueryValidationPlugin. Dla pola Name nie ma możliwości wpisywania cyfr, imię musi składać się co najmniej z dwóch znaków.
+Data ma zostać podana w formie RRRR/MM/DD, nie może być wyższa od daty dzisiejszej.
+W przypadku wieku użytkownika poniżej 18 lat wyświetl informację, ze nie może wysłać formularza.
+Wprowadzenie błędnych danych spowoduje wyświetlenie odpowiedniego komunikatu oraz wskazanie błędnie wypełnionego pola.
+
+</p>
+                </div>
+    </div>
+</div>
+</div>
+
+    </div>
+    <!-- ==================== Java Script ============================ -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Script -->
+    <script src="js/application.js"></script>
+</body>
+
+</html>
