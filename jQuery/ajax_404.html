@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#Zadanie Nr 2: AJAX</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="form"></div>
+    <!-- ==================== Java Script ============================ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    var div = $('div#form');
+
+    // zamiast onclick powinno stosować się addEventListener :) 
+    function forceLoad() {
+        div.load("404.html", function(response, status, xhr) {
+            if (status == "error") {
+                div.html('<div class="text-center jumbotron"><br>Nie można załadować pliku.<br>' + xhr.status + " " + xhr.statusText +
+                    '<br><br> Kliknij poniżej aby załadować ponownie<br><br> <button id="reload" type="button" onclick="oneRequest()" class="btn btn-primary">Odśwież stronę</button> </div>');
+            }
+        });
+    }
+
+    function oneRequest() {
+        var reload = $("#reload");
+        reload.toggleClass("btn-primary").text("Trwa odświeżanie...").attr('disabled', 'disabled');
+        setTimeout(function() {
+            reload.text("Odśwież ponownie stronę").removeAttr('disabled');
+            forceLoad();
+        }, 3000);
+    }
+
+    // czy w dokumencie istnieje div o id „#form”, jeśli tak to załaduje za pomocą $.ajax 
+    // formularz z pliku, który stworzyłeś wcześniej. 
+    if (div.length) {
+        forceLoad();
+    } else {
+        alert("Kontener DIV nie istnieje!");
+    }
+    </script>
+</body>
+
+</html>
